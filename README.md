@@ -38,3 +38,24 @@ What follows are step-by-step instructions walking you through the process to en
 11. Now under the list of OAuth 2.0 client IDs, you should see the client ID you just made. All the way to the right, click on the           download icon to download the client_secret_XXX.json file, where ‘XXX’ is your client ID. Save this file anywhere on your computer,     ideally in a new folder called “googleassistant.”
 12. Go to the Activity controls page for your Google account and make sure that “Web & App Activity”, “Location History”, “Device           Information”, and “Voice & Audio Activity” are enabled. This is so Google Assistant can actually read you personalized information.
 
+
+
+We have now created a mechanism for a client, in this case our Windows/Mac/Linux machine, to access the Google Assistant API under our Google account. Next we need to set up the client that will access the Google Assistant API.
+
+
+# Install the Google Assistant Sample Python Project
+
+
+1. Open cmd
+2. write,   It will take little time.
+  i).  py -m pip install google-assistant-sdk[samples]
+  ii). google-oauthlib-tool --client-secrets File_location\xxxxxx.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype -        -save --headless
+           Note: File Location = location of json file 
+           xxxxxx.json = name_of_ur_json_file.json
+           
+  iii). python -m googlesamples.assistant.grpc.audio_helpers
+  iv).  python -m googlesamples.assistant.grpc.pushtotalk
+  
+        
+        
+  
