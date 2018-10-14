@@ -49,14 +49,27 @@ We have now created a mechanism for a client, in this case our Windows/Mac/Linux
 1. Open cmd
 2. write,   It will take little time.
   i).  py -m pip install google-assistant-sdk[samples]
+  
   ii). google-oauthlib-tool --client-secrets File_location\xxxxxx.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype -        -save --headless
            
            Note: File Location = location of json file 
            xxxxxx.json = name_of_ur_json_file.json
+           In the command prompt, you will see a response telling you to visit a URL in order to authorize the application.
+           Copy and paste this URL into your browser. Select the same Google account that you used to configure the Google Assistant                API. On the next page, you will see a text box that contains your client’s Access Token.
+           Copy that Access token and paste it into the command prompt where it asks you for the authorization code. If done correctly,            you will see a response that your credentials have been saved.
+           
            
   iii). python -m googlesamples.assistant.grpc.audio_helpers
+  
+           # Test the Google Assistant
+           The first thing you’ll want to test is whether or not Google Assistant is able to record audio from your microphone. Enter              the following command into a command prompt, which will record 5 seconds of audio and play it back to you:
+           If you hear your audio played back to you, then enter this command to begin talking to Google Assistant:
+           
   iv).  python -m googlesamples.assistant.grpc.pushtotalk
   
-        
-        
   
+            Wait for the command prompt to say “press Enter to send a new request”, then press Enter to begin talking to Google                     Assistant. After you’re done speaking, the command prompt will display a transcript of what you just stated and then play               back the response. If you see a warning afterwards, just ignore it.
+  
+        
+        
+Have fun playing with Google Assistant on your Windows, macOS, or GNU/Linux machine! I played with it for only a few minutes before getting bored with it. It’s not particularly useful in this format, but it is a very quick demonstration of the possibilities that the new Google Assistant SDK represents. Perhaps we may see desktop apps or browser extensions taking advantage of this functionality in the near future.
