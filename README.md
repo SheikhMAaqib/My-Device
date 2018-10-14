@@ -1,4 +1,4 @@
-# How to get Google Assistant on your Windows, Mac, or Linux Machine
+# Get Google Assistant on your Windows, Linux or any type of Operating System
 # My-Device
 Google Assistant on Windows using Python 
 
