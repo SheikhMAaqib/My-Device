@@ -50,6 +50,7 @@ We have now created a mechanism for a client, in this case our Windows/Mac/Linux
 2. write,   It will take little time.
   i).  py -m pip install google-assistant-sdk[samples]
   ii). google-oauthlib-tool --client-secrets File_location\xxxxxx.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype -        -save --headless
+           
            Note: File Location = location of json file 
            xxxxxx.json = name_of_ur_json_file.json
            
